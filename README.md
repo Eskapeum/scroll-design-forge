@@ -87,6 +87,7 @@ Runtime names are stable and intentionally unchanged across versions: the `Scrol
 
 ## Credits
 
+- **design-forge** (contract-driven, gated design pipeline; anti-slop and intelligence layers) and **website-design-veteran** are Eskapeum's own earlier skills, merged here.
 - **[scroll-craft](https://github.com/nateherkai/scroll-craft)** by Nate Herk (MIT) is the origin of the ScrollCraft engine, the verification and media scripts, and much of the scroll and asset reference material.
 - **[scroll-world](https://github.com/oso95/scroll-world)** by cyw (MIT) contributed the worldflight mechanics, camera guidance and `knockout.py`.
 
