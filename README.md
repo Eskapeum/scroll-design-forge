@@ -2,7 +2,7 @@
 
 A [Claude Code](https://claude.com/claude-code) skill for building websites to an award-level standard, from a quiet, correct landing page to a scroll-driven, scrubbed-video camera journey. It routes the request, runs human review gates, builds code-native, verifies the final package in a real browser, and refuses invented proof (fake testimonials, metrics, logos).
 
-Version 5.0.0 merges three earlier skills: **design-forge** (contract-driven, gated design pipeline), **scroll-forge** (scroll engine, media pipeline, real-browser verification) and **scroll-craft** (dimensional brand heroes, final-package evidence).
+Version 5.0.0 merges three earlier skills: **design-forge** (contract-driven, gated design pipeline), **scroll-forge** (scroll engine, media pipeline, real-browser verification) and **scroll-craft** (dimensional brand heroes, final-package evidence). See [Credits](#credits) for the upstream projects it builds on.
 
 ## What it does
 
@@ -85,6 +85,13 @@ evals/            response-only regression briefs
 
 Runtime names are stable and intentionally unchanged across versions: the `ScrollCraft` global, `data-sc-*` attributes, `SCROLLFORGE_*` environment variables and `scroll-forge-build-id` / `scroll-forge-revision` meta tags.
 
+## Credits
+
+- **[scroll-craft](https://github.com/nateherkai/scroll-craft)** by Nate Herk (MIT) is the origin of the ScrollCraft engine, the verification and media scripts, and much of the scroll and asset reference material.
+- **[scroll-world](https://github.com/oso95/scroll-world)** by cyw (MIT) contributed the worldflight mechanics, camera guidance and `knockout.py`.
+
+Full upstream notices are in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
 ## License
 
-MIT. See [LICENSE](LICENSE).
+MIT. See [LICENSE](LICENSE) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

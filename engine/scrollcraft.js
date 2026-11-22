@@ -1,5 +1,6 @@
 /* ============================================================================
    scrollcraft: a scroll-driven interaction runtime
+   Derived from scroll-craft by Nate Herk (MIT), github.com/nateherkai/scroll-craft
    ----------------------------------------------------------------------------
    Vanilla JS. Zero dependencies. Zero DOM generation.
 
