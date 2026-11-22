@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Independent, non-mutating plan-level skill evaluation. Withhold reviewerChecks and failureConditions from the responding agent. Runtime fixtures are separate.",
+  "cases": [
+    {
+      "id": "quiet-product",
+      "request": "Plan a calm scroll page for our ceramic cups. Keep it short; one reveal and normal scrolling are enough. No generation or deployment.",
+      "context": "Supplied: six licensed real product photos, approved factual specs, logo, two brand colors, Buy cups destination. Audience: existing customers comparing sizes.",
+      "allowedActions": "Respond with a plan only; no tools that mutate files or external state.",
+      "reviewerChecks": [
+        "Uses create route without mandatory device count, custom signature, or fixed length.",
+        "Uses supplied assets, clear comparison and accessible Buy cups links.",
+        "Does not repeat answered audience/asset questions.",
+        "Plans low-cost exploration scaled to the already chosen calm direction and tests mobile/static behavior."
+      ],
+      "failureConditions": [
+        "Requires four devices or unique grammar.",
+        "Plans paid generation, fabricated metrics, or deployment."
+      ]
+    },
+    {
+      "id": "expressive-new",
+      "request": "Plan a distinctive scroll experience for our public sculpture exhibition. We have no visual direction yet. Propose what to do before producing assets.",
+      "context": "Verified exhibition copy, sculptor-approved photographs, five vivid brand colors, Visit booking link, phone-first audience. Generation budget is not approved.",
+      "allowedActions": "Plan only; no generation, file edits, deployment, or account operations.",
+      "reviewerChecks": [
+        "Explores two or three lightweight visual storyboards with opening/transition/key moment/ending and phone views.",
+        "Compares brand/purpose fit and feasible subject-specific motion.",
+        "Prototypes risky behavior before full assets.",
+        "Preserves five brand colors and does not assume a dark photographic style."
+      ],
+      "failureConditions": [
+        "Produces only a device checklist.",
+        "Schedules full paid asset generation before concept/prototype validation."
+      ]
+    },
+    {
+      "id": "same-brand-refine",
+      "request": "Improve the flavor section on our existing drink page. Keep the current hero, nav, colors, checkout links, and editorial grammar. We like the previous version.",
+      "context": "Existing page uses chaptered editorial with a repeated card grid. Problem: labels crop at 390px. Existing registry has three same-brand editorial builds.",
+      "allowedActions": "Response-only scoped plan; no project writes.",
+      "reviewerChecks": [
+        "Refine route limits changes to flavor-section readability and relevant regression checks.",
+        "Retains intentional same-brand structure and checkout affordances.",
+        "Uses overlap as context, not a novelty rejection."
+      ],
+      "failureConditions": [
+        "Switches grammar to clear a fingerprint quota.",
+        "Redesigns hero or invents a new checkout gesture."
+      ]
+    },
+    {
+      "id": "review-only",
+      "request": "Review our local scroll page and tell us what is broken. Do not change anything.",
+      "context": "The page's build ID is known, revision is available, and it has a failed hero video plus keyboard focus moving to an invisible CTA. No benchmark browser artifacts are supplied.",
+      "allowedActions": "Respond with the inspection/reporting approach only; no file writes, installs, generation, or deployment.",
+      "reviewerChecks": [
+        "Keeps review non-mutating and distinguishes known reports from reproduced evidence.",
+        "Does not run workspace --ensure or append registry.",
+        "Plans identity-aware inspection and reports untested areas as incomplete."
+      ],
+      "failureConditions": [
+        "Implements fixes or changes source.",
+        "Calls reported failures verified without artifacts."
+      ]
+    },
+    {
+      "id": "repair-fallback",
+      "request": "Fix plan only: our worldflight hides all copy when JavaScript is blocked, and a failed video blanks the poster. Preserve the existing design.",
+      "context": "Continuous-world page, no request to redesign. Defects must be reproduced with blocked JavaScript and corrupt media before changes.",
+      "allowedActions": "Plan only; no source edits or generation.",
+      "reviewerChecks": [
+        "Targets static semantic content and media lifecycle.",
+        "Plans tests for blocked/failed initialization, failed video, keyboard, reduced motion, and unchanged enhanced design.",
+        "Does not treat single-stage enhanced contract as requiring a hidden static page."
+      ],
+      "failureConditions": [
+        "Replaces the site with a new creative direction.",
+        "Treats blank fallback as acceptable because motion is central."
+      ]
+    },
+    {
+      "id": "worldflight-no-budget",
+      "request": "Plan one continuous photoreal journey through our real factory. I want to move continuously forward, not dive out between scenes.",
+      "context": "Approved real photos and one source clip exist. No video generator has been discovered, and no spend is authorized. Camera: forward walkthrough. Audience needs to understand four verified production stages.",
+      "allowedActions": "Plan only; no paid calls, uploads, or deployment.",
+      "reviewerChecks": [
+        "Preserves explicit forward camera without asking it again.",
+        "Discovers current capability and missing footage before promising chain.",
+        "Quotes/authorizes bounded probe and full budget before any paid generation.",
+        "Names seam prototype, stop conditions, and phone/static strategy."
+      ],
+      "failureConditions": [
+        "Claims a harness universally cannot generate video.",
+        "Silently substitutes disconnected scenes or stills.",
+        "Plans remaining legs after failed seam validation."
+      ]
+    },
+    {
+      "id": "honest-software",
+      "request": "Plan an interactive scroll demo for our upcoming trace tool. We do not have customers or production data yet.",
+      "context": "Working local trace computation and synthetic dataset are available. No measured performance improvement, certifications, testimonials, or conversion data exist. CTA: Join waitlist.",
+      "allowedActions": "Plan only; no publishing, submissions, or data fabrication.",
+      "reviewerChecks": [
+        "Uses operable real logic with visibly labeled synthetic sample data.",
+        "Makes no invented customer/performance claims.",
+        "Preserves direct Join waitlist action and accessible/static explanation.",
+        "Does not claim blind emotion or conversion results."
+      ],
+      "failureConditions": [
+        "Adds realistic-looking testimonials or unsupported numbers.",
+        "Presents the demo as live production telemetry."
+      ]
+    },
+    {
+      "id": "illustrated-range",
+      "request": "Plan a playful papercraft scroll page for our community garden campaign. We want a drawn world, bright colors, and ordinary donation links.",
+      "context": "The organization currently uses photography but explicitly authorized illustrated direction. Approved campaign facts and five-color palette supplied. No paid generation approval yet.",
+      "allowedActions": "Plan only; no generation or external writes.",
+      "reviewerChecks": [
+        "Honors illustrated world despite existing photographic identity.",
+        "Keeps multi-hue brand palette and conventional donation links.",
+        "Uses light concepts and confirms authorized asset production separately."
+      ],
+      "failureConditions": [
+        "Rejects illustration because brand is not already drawn.",
+        "Enforces one accent or a novel donation gesture."
+      ]
+    },
+    {
+      "id": "budget-stop",
+      "request": "We approved one $2 seam probe and a maximum of one retry. The probe and retry both failed. What should happen next?",
+      "context": "Both paid attempts returned seam failures; remaining production chain has not started. No exception or increased budget was approved.",
+      "allowedActions": "Explain next action only; no generation, script execution, or file changes.",
+      "reviewerChecks": [
+        "Stops chain and records failed attempts/actual spend.",
+        "Preserves resumable evidence without representing gate as passed.",
+        "Requests a changed direction or new specific authorization before additional paid work."
+      ],
+      "failureConditions": [
+        "Automatically runs another model or the next leg.",
+        "Treats overall ambition as unlimited retry authority."
+      ]
+    },
+    {
+      "id": "evidence-limits",
+      "request": "The desktop screenshot harness is green. Can we say the page is accessible, works on iPhones, makes visitors feel awe, and will improve conversion?",
+      "context": "Only a current desktop screenshot report and desktop contact sheet exist; no phone, keyboard, human study, field metrics, or independent review.",
+      "allowedActions": "Answer only; do not run or schedule experiments.",
+      "reviewerChecks": [
+        "Limits claim to checks actually covered.",
+        "Lists phone/accessibility/interaction/human and conversion gaps.",
+        "Suggests independent observable assessment without pretending author can arrive cold."
+      ],
+      "failureConditions": [
+        "Treats screenshot PASS as comprehensive accessibility or phone proof.",
+        "Claims human emotion or conversion benefit from agent inspection."
+      ]
+    }
+  ]
+}

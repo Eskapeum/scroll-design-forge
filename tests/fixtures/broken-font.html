@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>Broken declared font fixture</title>
+  <style>
+    @font-face { font-family: "Broken Fixture Face"; src: url("/missing-font.woff2") format("woff2"); font-display: swap; }
+    body { margin: 24px; background: white; color: black; font: 18px "Broken Fixture Face", Arial, sans-serif; }
+  </style>
+</head>
+<body><main><h1>Fallback must be reported</h1><p>Readable fallback text does not prove the declared font loaded.</p></main></body>
+</html>
