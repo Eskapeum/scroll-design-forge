@@ -4,6 +4,18 @@ A [Claude Code](https://claude.com/claude-code) skill for building websites to a
 
 Version 5.0.0 merges three earlier skills: **design-forge** (contract-driven, gated design pipeline), **scroll-forge** (scroll engine, media pipeline, real-browser verification) and **scroll-craft** (dimensional brand heroes, final-package evidence). See [Credits](#credits) for the upstream projects it builds on.
 
+## Showcase
+
+[![Demo: five recent builds, 52 seconds](media/demo-poster.jpg)](media/demo-720p.mp4)
+
+▶ [Watch the 52-second demo](media/demo-720p.mp4): five recent builds made with the skill and its predecessor pipeline.
+
+| | |
+|---|---|
+| [![SS Holdings](media/showcase/ss-holdings.jpg)](https://ss-holdings.tdadelaja.workers.dev/)<br>**[SS Holdings](https://ss-holdings.tdadelaja.workers.dev/)**: investment facilitation, South Africa. Layered gold "conceptual model" hero and a sourced project ledger. | [![Anas Textiles](media/showcase/anas-textiles.jpg)](https://anas-textiles.tdadelaja.workers.dev/)<br>**[Anas Textiles](https://anas-textiles.tdadelaja.workers.dev/)**: textile range explorer, a concept prototype. A continuous thread carries the visitor across sourcing regions. |
+| [![Supreme Heating & Cooling](media/showcase/supreme-heating.jpg)](https://supreme-heating.vercel.app/)<br>**[Supreme Heating & Cooling](https://supreme-heating.vercel.app/)**: Detroit boiler specialists since 1949. Storefront hero, then a blueprint section showing heat climbing room by room. | [![Golden Restoration](media/showcase/golden-construction.jpg)](https://golden-construction-alpha.vercel.app/)<br>**[Golden Restoration](https://golden-construction-alpha.vercel.app/)**: construction and restoration, Michigan. Line-drawing plans resolve into the finished house as you scroll. |
+| [![MPM Painting](media/showcase/mpm-painting.jpg)](https://mpm-painting.vercel.app/)<br>**[MPM Painting](https://mpm-painting.vercel.app/)**: painting in Macomb & Metro Detroit. Kinetic poster type and a torn-paint reveal. | |
+
 ## What it does
 
 1. **Routes every request** (Create full or lite, Refine, Repair, Review) and runs only the gates that route needs.
